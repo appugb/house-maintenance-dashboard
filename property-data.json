@@ -5,7 +5,7 @@
       "Type": "Repair",
       "Category": "Plumbing",
       "Location": "Toilet",
-      "Description": "Toilet repair",
+      "Description": "Toilet clogged; silicone work; investigation into hot/cold water pressure",
       "Contractor": "Aitken Plumbing",
       "Cost": 679.65
     },
@@ -14,9 +14,66 @@
       "Type": "Asset Replacement",
       "Category": "Plumbing",
       "Location": "Laundry",
-      "Description": "Hot water cylinder replacement",
+      "Description": "Installation of new hot water tank and removal of old one",
       "Contractor": "Aitken Plumbing",
       "Cost": 5407.88
     }
-  ]
+  ],
+  "assets": [],
+  "maintenance": [
+    {
+      "Task": "Drain cleaning",
+      "Location": "Kitchen sink",
+      "Frequency (Months)": 12,
+      "Last Completed": "",
+      "Next Due": ""
+    },
+    {
+      "Task": "Drain cleaning",
+      "Location": "Laundry sink",
+      "Frequency (Months)": 12,
+      "Last Completed": "",
+      "Next Due": ""
+    },
+    {
+      "Task": "Drain cleaning",
+      "Location": "Bathroom wash basin",
+      "Frequency (Months)": 12,
+      "Last Completed": "",
+      "Next Due": ""
+    },
+    {
+      "Task": "Drain cleaning",
+      "Location": "Shower drain",
+      "Frequency (Months)": 12,
+      "Last Completed": "",
+      "Next Due": ""
+    },
+    {
+      "Task": "Drain cleaning",
+      "Location": "Bath tub drain",
+      "Frequency (Months)": 12,
+      "Last Completed": "",
+      "Next Due": ""
+    }
+  ],
+  "contractors": [
+    {
+      "Contractor": "Aitken Plumbing",
+      "Trade": "Plumber",
+      "Phone": "021 246 9191",
+      "Email": "info@aitkenplumbing.co.nz",
+      "Website": "https://www.aitkenplumbing.co.nz",
+      "Notes": "Chris Aitken"
+    },
+    {
+      "Contractor": "Teegan",
+      "Trade": "Electrician",
+      "Phone": "022 507 9894",
+      "Email": "",
+      "Website": "",
+      "Notes": ""
+    }
+  ],
+  "documents": []
 }
