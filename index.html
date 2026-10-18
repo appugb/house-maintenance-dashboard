@@ -13,18 +13,21 @@
 
 <div class="container">
 
-    <h1>🏠 House Maintenance Dashboard</h1>
+    <header>
+        <h1>🏠 House Maintenance Dashboard</h1>
+        <p>Your personal property ownership tracker</p>
+    </header>
 
     <div class="cards">
 
         <div class="card">
             <h3>Total Spend</h3>
-            <p id="totalSpend">$0</p>
+            <p id="totalSpend">$0.00</p>
         </div>
 
         <div class="card">
             <h3>This Year</h3>
-            <p id="yearSpend">$0</p>
+            <p id="yearSpend">$0.00</p>
         </div>
 
         <div class="card">
@@ -39,34 +42,52 @@
 
     </div>
 
-    <div class="chart-container">
-        <h2>Spend by Category</h2>
-        <canvas id="categoryChart"></canvas>
+    <div class="chart-grid">
+
+        <div class="chart-container">
+            <h2>Spend by Category</h2>
+            <canvas id="categoryChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Annual Spend</h2>
+            <canvas id="yearChart"></canvas>
+        </div>
+
     </div>
 
-    <div class="chart-container">
-        <h2>Annual Spend</h2>
-        <canvas id="yearChart"></canvas>
+    <div class="chart-full">
+
+        <div class="chart-container">
+            <h2>Monthly Spend Trend</h2>
+            <canvas id="monthlyChart"></canvas>
+        </div>
+
     </div>
 
-    <div class="table-container">
-        <h2>Top Expenses</h2>
+    <div class="table-grid">
 
-        <table id="expenseTable">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Cost</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div>
+        <div class="table-container">
+            <h2>Top Expenses</h2>
 
-</div>
+            <table id="expenseTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
 
-<script src="app.js"></script>
+        <div class="table-container">
+            <h2>Upcoming Maintenance</h2>
 
-</body>
-</html>
+            <table id="maintenanceTable">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Location</th>
+                    <
