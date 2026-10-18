@@ -1,80 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>House Maintenance Dashboard</title>
+<title>House Maintenance</title>
 
-<link rel="stylesheet" href="styles.css">
-
+<script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
-<body>
+<body class="bg-slate-950 text-white">
 
-<div class="layout">
+<div class="max-w-7xl mx-auto p-6">
 
-<header>
+    <div class="mb-8">
 
-<div>
-<h1>🏠 House Maintenance</h1>
-<p>Your property ownership dashboard</p>
-</div>
+        <h1 class="text-4xl font-bold">
+            🏠 House Maintenance
+        </h1>
 
-<div class="last-updated">
-<span id="lastUpdated"></span>
-</div>
+        <p class="text-slate-400 mt-2">
+            Property ownership dashboard
+        </p>
 
-</header>
+    </div>
 
-<section class="kpis">
+    <div class="grid grid-cols-3 gap-5 mb-6">
 
-<div class="kpi-card">
-<span>Lifetime Spend</span>
-<h2 id="totalSpend">$0</h2>
-</div>
+        <div class="bg-slate-900 rounded-3xl p-6">
+            <div class="text-slate-400">
+                Lifetime Spend
+            </div>
 
-<div class="kpi-card">
-<span>This Year</span>
-<h2 id="yearSpend">$0</h2>
-</div>
+            <div
+                class="text-4xl font-bold mt-2"
+                id="totalSpend">
+            </div>
+        </div>
 
-<div class="kpi-card">
-<span>Expenses Logged</span>
-<h2 id="expenseCount">0</h2>
-</div>
+        <div class="bg-slate-900 rounded-3xl p-6">
+            <div class="text-slate-400">
+                Largest Expense
+            </div>
 
-<div class="kpi-card">
-<span>Largest Expense</span>
-<h2 id="largestExpense">$0</h2>
-</div>
+            <div
+                class="text-4xl font-bold mt-2"
+                id="largestExpense">
+            </div>
+        </div>
 
-</section>
+        <div class="bg-slate-900 rounded-3xl p-6">
+            <div class="text-slate-400">
+                This Year
+            </div>
 
-<section class="dashboard-grid">
+            <div
+                class="text-4xl font-bold mt-2"
+                id="yearSpend">
+            </div>
+        </div>
 
-<div class="panel">
-<h3>Spend by Category</h3>
-<canvas id="categoryChart"></canvas>
-</div>
+    </div>
 
-<div class="panel">
-<h3>Monthly Spend Trend</h3>
-<canvas id="monthlyChart"></canvas>
-</div>
+    <div class="grid grid-cols-3 gap-5">
 
-<div class="panel">
-<h3>Recent Activity</h3>
-<div id="activityFeed"></div>
-</div>
+        <div class="col-span-2 bg-slate-900 rounded-3xl p-5">
 
-<div class="panel">
-<h3>Maintenance Tasks</h3>
-<div id="maintenanceFeed"></div>
-</div>
+            <h3 class="mb-4 text-slate-300">
+                Monthly Spend
+            </h3>
 
-</section>
+            <canvas id="monthlyChart"></canvas>
+
+        </div>
+
+        <div class="bg-slate-900 rounded-3xl p-5">
+
+            <h3 class="mb-4 text-slate-300">
+                Categories
+            </h3>
+
+            <canvas id="categoryChart"></canvas>
+
+        </div>
+
+        <div class="col-span-2 bg-slate-900 rounded-3xl p-5">
+
+            <h3 class="mb-4 text-slate-300">
+                Recent Activity
+            </h3>
+
+            <div id="activityFeed"></div>
+
+        </div>
+
+        <div class="bg-slate-900 rounded-3xl p-5">
+
+            <h3 class="mb-4 text-slate-300">
+                Maintenance
+            </h3>
+
+            <div id="maintenanceFeed"></div>
+
+        </div>
+
+    </div>
 
 </div>
 
