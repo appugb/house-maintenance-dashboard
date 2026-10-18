@@ -1,60 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    margin: 0;
-    padding: 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-h1 {
-    margin-bottom: 30px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.card {
+.chart-container {
     background: white;
+    margin-top: 20px;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    height: 350px;
 }
 
-.card p {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2f5597;
-}
-
-.chart-container,
-.table-container {
-    background: white;
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.08);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th {
-    background: #2f5597;
-    color: white;
-}
-
-th,
-td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
+.chart-container canvas {
+    max-height: 280px;
 }
