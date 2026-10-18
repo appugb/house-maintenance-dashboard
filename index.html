@@ -1,93 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Maintenance Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
+<title>House Maintenance Dashboard</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
-<div class="container">
+<div class="layout">
 
-    <header>
-        <h1>🏠 House Maintenance Dashboard</h1>
-        <p>Your personal property ownership tracker</p>
-    </header>
+<header>
 
-    <div class="cards">
+<div>
+<h1>🏠 House Maintenance</h1>
+<p>Your property ownership dashboard</p>
+</div>
 
-        <div class="card">
-            <h3>Total Spend</h3>
-            <p id="totalSpend">$0.00</p>
-        </div>
+<div class="last-updated">
+<span id="lastUpdated"></span>
+</div>
 
-        <div class="card">
-            <h3>This Year</h3>
-            <p id="yearSpend">$0.00</p>
-        </div>
+</header>
 
-        <div class="card">
-            <h3>Expenses</h3>
-            <p id="expenseCount">0</p>
-        </div>
+<section class="kpis">
 
-        <div class="card">
-            <h3>Contractors</h3>
-            <p id="contractorCount">0</p>
-        </div>
+<div class="kpi-card">
+<span>Lifetime Spend</span>
+<h2 id="totalSpend">$0</h2>
+</div>
 
-    </div>
+<div class="kpi-card">
+<span>This Year</span>
+<h2 id="yearSpend">$0</h2>
+</div>
 
-    <div class="chart-grid">
+<div class="kpi-card">
+<span>Expenses Logged</span>
+<h2 id="expenseCount">0</h2>
+</div>
 
-        <div class="chart-container">
-            <h2>Spend by Category</h2>
-            <canvas id="categoryChart"></canvas>
-        </div>
+<div class="kpi-card">
+<span>Largest Expense</span>
+<h2 id="largestExpense">$0</h2>
+</div>
 
-        <div class="chart-container">
-            <h2>Annual Spend</h2>
-            <canvas id="yearChart"></canvas>
-        </div>
+</section>
 
-    </div>
+<section class="dashboard-grid">
 
-    <div class="chart-full">
+<div class="panel">
+<h3>Spend by Category</h3>
+<canvas id="categoryChart"></canvas>
+</div>
 
-        <div class="chart-container">
-            <h2>Monthly Spend Trend</h2>
-            <canvas id="monthlyChart"></canvas>
-        </div>
+<div class="panel">
+<h3>Monthly Spend Trend</h3>
+<canvas id="monthlyChart"></canvas>
+</div>
 
-    </div>
+<div class="panel">
+<h3>Recent Activity</h3>
+<div id="activityFeed"></div>
+</div>
 
-    <div class="table-grid">
+<div class="panel">
+<h3>Maintenance Tasks</h3>
+<div id="maintenanceFeed"></div>
+</div>
 
-        <div class="table-container">
-            <h2>Top Expenses</h2>
+</section>
 
-            <table id="expenseTable">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Description</th>
-                        <th>Cost</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+</div>
 
-        <div class="table-container">
-            <h2>Upcoming Maintenance</h2>
+<script src="app.js"></script>
 
-            <table id="maintenanceTable">
-                <thead>
-                    <tr>
-                        <th>Task</th>
-                        <th>Location</th>
-                    <
+</body>
+</html>
