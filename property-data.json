@@ -1,1 +1,22 @@
-
+{
+  "expenses": [
+    {
+      "Date": "2026-09-29",
+      "Type": "Repair",
+      "Category": "Plumbing",
+      "Location": "Toilet",
+      "Description": "Toilet repair",
+      "Contractor": "Aitken Plumbing",
+      "Cost": 679.65
+    },
+    {
+      "Date": "2026-10-05",
+      "Type": "Asset Replacement",
+      "Category": "Plumbing",
+      "Location": "Laundry",
+      "Description": "Hot water cylinder replacement",
+      "Contractor": "Aitken Plumbing",
+      "Cost": 5407.88
+    }
+  ]
+}
